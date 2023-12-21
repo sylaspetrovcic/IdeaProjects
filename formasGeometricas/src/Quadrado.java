@@ -1,7 +1,8 @@
 public class Quadrado extends Quadrilateros implements FormaGeometrica{
     int l;
     public Quadrado(int l){
-        this.l = l;
+        super();
+        //this.l = l;
     }
 
     @Override
