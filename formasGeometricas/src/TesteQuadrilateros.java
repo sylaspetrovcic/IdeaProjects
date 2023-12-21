@@ -18,39 +18,36 @@ public class TesteQuadrilateros {
             System.out.println(">");
             int opcao = leitor.nextInt();
             switch (opcao) {
-                case 1:
+                case 1 -> {
                     System.out.println("Digite a base");
                     int base = leitor.nextInt();
                     System.out.println("Digite a altura");
                     int altura = leitor.nextInt();
                     formas[i] = new Retangulos(base, altura);
-
                     System.out.println("Base = " + base + "," + " Altura " + altura);
                     System.out.println("Perimetro = " + formas[i].calcularPerimetro());
                     System.out.println("Área = " + formas[i].calcularArea());
-                    break;
-
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Digite o lado");
                     int lado = leitor.nextInt();
                     formas[i] = new Quadrado(lado);
                     System.out.println("Comprimento do lado = " + lado);
                     System.out.println("Perimetro = " + formas[i].calcularPerimetro());
                     System.out.println("Área = " + formas[i].calcularArea());
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("Digite o raio");
                     int raio = leitor.nextInt();
                     formas[i] = new Circulo(raio);
                     System.out.println("Comprimento do raio = " + raio);
                     System.out.println("Perímetro = " + formas[i].calcularPerimetro());
                     System.out.println("Área = " + formas[i].calcularArea());
-                    break;
-
-                default:
+                }
+                default -> {
                     System.out.println("Forma desconhecida");
                     i--;
-                    break;
+                }
             }
         }
 
