@@ -1,19 +1,18 @@
-public class Quadrado extends Quadrilateros implements FormaGeometrica{
-    int l;
-    public Quadrado(int l){
+public class Quadrado extends Quadrilateros {
+    int lado;
+    public Quadrado(int lado){
         super();
-        //this.l = l;
+        this.lado = lado;
     }
 
     @Override
     public int calcularPerimetro() {
-        perimetro = 4 * l;
+        perimetro = 4 * lado;
         return perimetro;
     }
 
     @Override
     public int calcularArea() {
-        int area = l * l;
-        return area;
+        return lado * lado;
     }
 }

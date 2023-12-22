@@ -1,4 +1,4 @@
-public class Retangulos extends Quadrilateros implements FormaGeometrica{
+public class Retangulos extends Quadrilateros {
     int base,altura;
 
     public Retangulos(int base, int altura) {
@@ -14,7 +14,7 @@ public class Retangulos extends Quadrilateros implements FormaGeometrica{
 
     @Override
     public int calcularArea() {
-        int area = base * altura;
-        return area;
+        return base * altura;
+
     }
 }

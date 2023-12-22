@@ -9,7 +9,7 @@ public class TesteQuadrilateros {
 
 
         for (int i = 0; i < qte; i++) {
-            System.out.println("Forma = " + i + 1);
+            System.out.println("Forma = " + (i + 1));
             System.out.println("Qual forma deseja criar?");
             System.out.println("1 - Quadrado");
             System.out.println("2 - Retângulo");
